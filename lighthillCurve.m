@@ -19,7 +19,7 @@ waveNumber = 0.66;
 k = 2*pi*waveNumber; 
 
 % tail-beat frequency (rad/s):
-w =4;
+w = 4;
 
 % lighthill equation:
 xn = x/L_tot;     % x position normalized to length
