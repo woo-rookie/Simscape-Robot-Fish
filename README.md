@@ -1,7 +1,7 @@
 Thank you all for a lovely few days in DC. All the Mapboxers I met and worked with were welcoming, candid, delightful, and generally inspiring. I was particularly impressed by the positive energy and powerful trust: I think this combination sustains a unique atmosphere of curiosity, enthusiasm, and collaborative support, which in turn powers Mapbox's impressive achievements. That was a long sentence, so I will try to illustrate it visually:
 
 ![teamwork-cat-dog](https://github.com/davidtheclark/gifs/blob/master/teamwork-cat-dog.gif)
-![teamwork-flip](https://github.com/davidtheclark/gifs/blob/master/teamwork-flip.gif)
+![teamwork-flip](https://github.com/physiqueguy/Simscape-Robot-Fish/master/Gifs/a1.gif)
 
 For those I didn't meet: Hello! I'm David Clark, an English-teacher-turned-frontend developer living in Tucson, Arizona. (Yes, I am the second Clark from Tucson interested in working at Mapbox.)
 
