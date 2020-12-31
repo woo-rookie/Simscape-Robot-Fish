@@ -44,7 +44,7 @@ Inspired by the MIT RoboTuna. See math.pdf for explanation of math involved.
 ### Controller Torque 
 ![](Plots/u1.jpg?raw=true)
 ### Reference Angles
-![](Plots/qd1.png?raw=true)
+![](Plots/qd1.jpg?raw=true)
 
 
 ## rootFindingAnimation.py
