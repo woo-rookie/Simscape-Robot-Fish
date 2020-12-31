@@ -2,7 +2,7 @@
 
 ## Simscape Robot Fish
 Robot fish/tailfin simulation using Simulink's Simscape multibody library.
-Inspired by the MIT RoboTuna. See math.pdf for explanation of math involved. 
+Inspired by the MIT RoboTuna. See `MathForSimscapeRobotFish_draft1.pdf`.
 
 ## Requirements
 1. [MATLAB](https://mathworks.com/products/matlab.html) (r2019A)
@@ -12,11 +12,11 @@ Inspired by the MIT RoboTuna. See math.pdf for explanation of math involved.
 
 ## Running Simulations
 1) Open the source folder in MATLAB
-2) Run params.m to populate Matlab workspace
-3) (OPTIONAL) Edit waveform parameters (A,c1,c2,k,w) in lighthillCurve.m 
-4) Open model.slx 
-5) In "Simulation->Model Configuration Parameters" choose the "daessc (DAE solver for simscape)" solver with variable-step
-6) Run model.slx 
+2) Run `params.m` to populate Matlab workspace
+3) (OPTIONAL) Edit waveform parameters `(A,c1,c2,k,w)` in `lighthillCurve.m` 
+4) Open `Model.slx`
+5) In `Simulation->Model Configuration Parameters` choose the `daessc (DAE solver for simscape)` solver with variable-step
+6) Run `Model.slx` 
 
 ## Simscape Renderings:
 
@@ -28,13 +28,20 @@ Inspired by the MIT RoboTuna. See math.pdf for explanation of math involved.
 
 ## Simulink Model Structure 
 
+
 ### Top-Level Structure
 ![](ModelPics/FullModel.png?raw=true)
 
+A PD controller is required to track the reference angles `q` over time. 
 ### PD Controller
 ![](ModelPics/PDController.png?raw=true)
 
-### Joint
+The simscape model is composed of 8 body links + 1 tail fin link. The 8 body
+links of constant length L = 6.25 cm are connected by the inner N = 7 revolute
+joints. The joints take torque input that is the sum of torsional spring and damping
+and feedback control input. 
+
+### Body Segment (Link + Joint)
 ![](ModelPics/Link&Joint.png?raw=true)
 
 
@@ -42,10 +49,13 @@ Inspired by the MIT RoboTuna. See math.pdf for explanation of math involved.
 
 
 ### Controller Torque 
-![](Plots/u1.jpg?raw=true)
-### Reference Angles
-![](Plots/qd1.jpg?raw=true)
+![](Plots/u3_small.jpg?raw=true)
 
+### Reference Angles
+![](Plots/qd3_small.jpg?raw=true)
+
+### Reference Angular Velocity
+![](Plots/qd_dot3_small.jpg?raw=true)
 
 ## rootFindingAnimation.py
 
@@ -53,4 +63,5 @@ Creates GIF of N-joint polyline fitted to lighthill curve using bisection method
 The reference angles used in the simulation are the angles between adjacent line segments
 
 ![](rootFinding.gif?raw=true)
+
 
