@@ -1,20 +1,20 @@
 
 
-1)
+b1)
 A = 0.5
 c1 = 0.05*1.1;
 c2 = 0.6*0.6; 
 k = 2*pi*0.25
 w = 6
 
-2)
+b2)
 A = 0.5
 c1 = 0.05*1.1;
 c2 = 0.6*0.6; 
 k = 2*pi*0.5
 w = 4
 
-3)
+b3)
 
 A = 0.3
 c1 = 0.05*1.1;
@@ -22,16 +22,3 @@ c2 = 0.6*0.6;
 k = 2*pi*0.75
 w = 10
 
-
-A = 0.5;
-
-% lighthill c1, c2 coefficients:
-
-% wavenumber: 0.25 -> Thunniform, 0.5 -> Carangiform,
-%             0.75 -> Subcarangiform, 1.0 ->  Anguilliform 
-
-waveNumber = 0.25;
-k = 2*pi*waveNumber; % 0.5 -> Carangiform
-
-% tail-beat frequency (rad/s):
-w = 2;
