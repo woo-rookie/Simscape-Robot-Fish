@@ -92,7 +92,8 @@ def createImage(N):
     x = np.arange(0, 80, xstep)
     yscale = 100
     ax.set_ylim(-40, 40)
-    ax.plot(x, lighthill(x, tclock), 'k') 
+    ax.set_xlim(0, 80)
+    #ax.plot(x, lighthill(x, tclock), 'k') 
     ax.grid()
 
     x0 = 0

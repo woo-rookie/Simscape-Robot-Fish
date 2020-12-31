@@ -28,6 +28,6 @@ Kd_mat = kd * M;
 wn = 50; % rad/s
 zeta = 0.9; % damping ratio
 lpf_derivative = tf([wn*wn 0], [1 2*zeta*wn wn*wn]);
-#controller_filter = tf(wn*wn, [1 2*zeta*wn wn*wn]);
+controller_filter = tf(wn*wn, [1 2*zeta*wn wn*wn]);
 
 
