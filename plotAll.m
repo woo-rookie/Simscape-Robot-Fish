@@ -58,7 +58,7 @@ ylabel('Plots');
 
 figure(5);
 plot(t, u_torque(4:8,:));
-ylim([-0.1, 0.1]);
+ylim([-0.2, 0.2]);
 title('joint control torque u (gcm^2/s^2) vs. time (s)');
 xlabel('time (s)');
 ylabel('u (gcm^2/s^2)');

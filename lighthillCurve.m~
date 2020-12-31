@@ -6,7 +6,7 @@ function y = lighthillCurve(x,t)
 L_tot  = 50.0;
 
 % Amplitude scale factor:
-A = 0.6;
+A = 0.3;
 
 % lighthill c1, c2 coefficients:
 c1 = 0.05*1.1; % 0.055
