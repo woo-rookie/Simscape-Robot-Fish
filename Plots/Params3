@@ -1,0 +1,19 @@
+A = 0.6;
+
+% lighthill c1, c2 coefficients:
+c1 = 0.05*1.1; % 0.055
+c2 = 0.012;  % 0.36
+
+% wavenumber: 0.25 -> Thunniform, 0.5 -> Carangiform,
+%             0.75 -> Subcarangiform, 1.0 ->  Anguilliform 
+
+waveNumber = 0.75;
+k = 2*pi*waveNumber; 
+
+% tail-beat frequency (rad/s):
+w = 3;
+
+Normalized Parameters
+
+-> waveNumber = 0.75, frequency = 3 rad/s, c1 = 0.6*0.05*1.1*50=1.65
+c2 = 0.6*0.012*50*50 = 18
