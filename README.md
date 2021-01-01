@@ -14,9 +14,9 @@ Inspired by the MIT RoboTuna. See SimscapeRobotFishMath.pdf for math explanation
 1) Open the source folder in MATLAB
 2) Run params.m to populate Matlab workspace
 3) (OPTIONAL) Edit waveform parameters (A,c1,c2,k,w) in lighthillCurve.m 
-4) Open model.slx 
+4) Open Model.slx 
 5) In "Simulation->Model Configuration Parameters" choose the "daessc (DAE solver for simscape)" solver with variable-step
-6) Run model.slx 
+6) Run Model.slx 
 
 ## Simscape Renderings:
 
