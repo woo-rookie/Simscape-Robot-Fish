@@ -6,7 +6,7 @@ function y = lighthillCurve(x,t)
 L_tot  = 50.0;
 
 % Amplitude scale factor:
-A = 0.6;
+A = 0.3;
 
 % lighthill c1, c2 coefficients:
 c1 = 0.05*1.1; % 0.055
@@ -19,7 +19,7 @@ waveNumber = 0.75;
 k = 2*pi*waveNumber; 
 
 % tail-beat frequency (rad/s):
-w = 3;
+w = 12;
 
 % lighthill equation:
 xn = x/L_tot;     % x position normalized to length
