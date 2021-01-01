@@ -71,6 +71,6 @@ Example plots are below for the current version with first 2/7 reference angles 
 Creates GIF of N-joint polyline fitted to lighthill curve using the bisection method. This 
 illustrates what inverseKinematics.m does. The reference angles used in the Matlab simulation are the angles between adjacent line segments.
 
-![](Gifs/rootFinding3.gif?raw=true)![](Gifs/rootFinding4.gif?raw=true)
+![](Gifs/rootFinding3.gif?raw=true)
 
 
