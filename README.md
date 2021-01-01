@@ -22,9 +22,6 @@ Inspired by the MIT RoboTuna. See SimscapeRobotFishMath.pdf for math explanation
 
 This "robot fish" is modeled as a 8-joint manipulator tasked with tracking a time-dependent plane curve known as the Lighthill curve:
 
-<COMMENT: + symbol replaced with %2B>
-
-<COMMENT: Lighthill Equation>
 <img src="https://render.githubusercontent.com/render/math?math=\Large Y(x,t) = (c_1 x %2B c_2 x^2)sin(kx - \omega t) %2B c_1xsin(\omega t)">.
 
 The Lighthill curve is supposed to model a fish's swimming waveform (or gait) in the XY-plane. Each fish's gait has its own unique amplitude profile, wavenumber, and angular frequency. These parameters are also a function of swimming speed, acceleration, etc. 
@@ -44,19 +41,16 @@ rendered in Simscape, outputting the measured angles which feed back to PD contr
 ### Top-Level Structure
 ![](ModelPics/TopLevel.png?raw=true)
 
-
 ### PD Torque Feedback Controller
 ![](ModelPics/PDcontroller.png?raw=true)
 
 The simscape model is composed of 8 body link + 1 tail fin link. The 8 body links of constant length L = 6.25 cm are connected by the inner N = 7 revolute joints 1-7. There are also revolute joints '0' which connects the frontmost link to the world frame and 't' connects the 8th link to the tailfin. Joints 1-t each have torsional spring and dampers with constant coefficients k = 200 [g cm^2 / s^2] and b = 5 [g cm s^2].
-
 
 ### 8 Body Links and Tailfin
 ![](ModelPics/8links.png?raw=true)
 
 ### Each Body Link + Joint
 ![](ModelPics/Link&Joint.png?raw=true)
-
 
 ## Output Data
 
@@ -72,19 +66,11 @@ Example plots are below for the current version with first 2/7 reference angles 
 ### Reference Angular Velocity
 ![](Plots/qd_dot3.jpg?raw=true)
 
-
-
 ## rootFindingAnimation.py
 
 Creates GIF of N-joint polyline fitted to lighthill curve using the bisection method. This 
 illustrates what inverseKinematics.m does. The reference angles used in the Matlab simulation are the angles between adjacent line segments.
 
-![](Gifs/rootFinding2.gif?raw=true)![](Gifs/rootFinding4.gif?raw=true)
-
-
-
-
-
-
+![](Gifs/rootFinding3.gif?raw=true)![](Gifs/rootFinding4.gif?raw=true)
 
 
