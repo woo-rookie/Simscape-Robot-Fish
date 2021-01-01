@@ -31,7 +31,7 @@ ylabel('angle (rad)');
 % Plot q_dot
 figure(2);
 plot(t, q_dot_rad(4:8,:));
-title('measured angular velocity q_dot (rad/s) vs. time (s)');
+title('measured angular velocity dq/dt (rad/s) vs. time (s)');
 xlabel('time (s)');
 ylabel('angular velocity (rad/s)');
 
@@ -39,7 +39,7 @@ ylabel('angular velocity (rad/s)');
 % Plot qd 
 figure(3);
 plot(t, qd_rad(4:8,:));
-title('reference angle qd (rad) vs. time (s)');
+title('reference angle q_d (rad) vs. time (s)');
 xlabel('time (s)');
 ylabel('angle (rad)');
 
@@ -49,7 +49,7 @@ ylabel('angle (rad)');
 figure(4); 
 plot(t, qd_dot_rad(4:8,:));
 ylim([-3, 3]);
-title('reference angular velocity qd_dot (rad/s) vs. time (s)');
+title('reference angular velocity dq_d/dt (rad/s) vs. time (s)');
 xlabel('time (s)');
 ylabel('Plots');
 

@@ -28,7 +28,7 @@ c1, c2    Linear, quadratic amplitude constants
 # Time: 
 tclock = 2.0
 # Robot Params: 
-Nlinks = 8
+Nlinks = 16
 SCALE = 1
 L = 10.0 * SCALE
 L_tot = L * Nlinks
